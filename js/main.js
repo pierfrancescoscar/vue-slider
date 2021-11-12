@@ -35,6 +35,12 @@ const app = new Vue ({
         ],
         activeSlide: 4,
     },
+    created(){
+        // Setting timing interval
+        setInterval(() => {
+            this.nextSlide();
+        },3000)
+    },
     methods: {
         // Previous slide on click function
         prevSlide() {
@@ -55,8 +61,9 @@ const app = new Vue ({
         // Setting slide by clicking thumb
         setSlide(index) {
             this.activeSlide = index;
-            
-        }
+
+        },
+       
 
     }
 
