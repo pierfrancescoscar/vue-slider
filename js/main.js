@@ -51,7 +51,13 @@ const app = new Vue ({
             if(this.activeSlide > this.slides.length -1) {
                 this.activeSlide = 0;
             }
+        },
+        // Setting slide by clicking thumb
+        setSlide(index) {
+            this.activeSlide = index;
+            
         }
+
     }
 
 })
