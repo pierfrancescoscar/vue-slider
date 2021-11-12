@@ -33,7 +33,25 @@ const app = new Vue ({
                     
             },
         ],
-        activeSlide: 0,
+        activeSlide: 4,
     },
+    methods: {
+        // Previous slide on click function
+        prevSlide() {
+            this.activeSlide--;
+
+            if(this.activeSlide < 0) {
+                this.activeSlide = this.slides.length -1;
+            }
+        },
+        // Next slide on click function
+        nextSlide() {
+            this.activeSlide++;
+            
+            if(this.activeSlide > this.slides.length -1) {
+                this.activeSlide = 0;
+            }
+        }
+    }
 
 })
