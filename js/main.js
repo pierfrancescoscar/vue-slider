@@ -28,8 +28,9 @@ const app = new Vue ({
             },
             {
                 image: 'img/05.jpg',
-                title:
-                    'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
+                title: 'Lorem',
+                text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
+                    
             },
         ],
         activeSlide: 0,
